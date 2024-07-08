@@ -13,6 +13,9 @@
 		3009279E2C3C68DF0073E384 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 3009279D2C3C68DF0073E384 /* Base */; };
 		300927A02C3C68E00073E384 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3009279F2C3C68E00073E384 /* Assets.xcassets */; };
 		300927A32C3C68E00073E384 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 300927A22C3C68E00073E384 /* Base */; };
+		300927AC2C3C69D60073E384 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927AB2C3C69D60073E384 /* MainView.swift */; };
+		300927AF2C3C6D990073E384 /* ToollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927AE2C3C6D990073E384 /* ToollBar.swift */; };
+		300927B22C3C71200073E384 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927B12C3C71200073E384 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3009279F2C3C68E00073E384 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		300927A22C3C68E00073E384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		300927A42C3C68E00073E384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300927AB2C3C69D60073E384 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		300927AE2C3C6D990073E384 /* ToollBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToollBar.swift; sourceTree = "<group>"; };
+		300927B12C3C71200073E384 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 		300927952C3C68DF0073E384 /* SoccerSquad */ = {
 			isa = PBXGroup;
 			children = (
+				300927B02C3C71110073E384 /* ViewModel */,
+				300927AD2C3C6D760073E384 /* Helpers */,
+				300927AA2C3C69C40073E384 /* View */,
 				300927962C3C68DF0073E384 /* AppDelegate.swift */,
 				300927982C3C68DF0073E384 /* SceneDelegate.swift */,
 				3009279A2C3C68DF0073E384 /* ViewController.swift */,
@@ -65,6 +74,30 @@
 				300927A42C3C68E00073E384 /* Info.plist */,
 			);
 			path = SoccerSquad;
+			sourceTree = "<group>";
+		};
+		300927AA2C3C69C40073E384 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				300927AB2C3C69D60073E384 /* MainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		300927AD2C3C6D760073E384 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				300927AE2C3C6D990073E384 /* ToollBar.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		300927B02C3C71110073E384 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				300927B12C3C71200073E384 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3009279B2C3C68DF0073E384 /* ViewController.swift in Sources */,
+				300927AC2C3C69D60073E384 /* MainView.swift in Sources */,
 				300927972C3C68DF0073E384 /* AppDelegate.swift in Sources */,
+				300927AF2C3C6D990073E384 /* ToollBar.swift in Sources */,
+				300927B22C3C71200073E384 /* ViewModel.swift in Sources */,
 				300927992C3C68DF0073E384 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,8 +334,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,9 +344,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = home.SoccerSquad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,8 +367,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,9 +377,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = home.SoccerSquad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
