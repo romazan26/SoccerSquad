@@ -16,6 +16,14 @@
 		300927AC2C3C69D60073E384 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927AB2C3C69D60073E384 /* MainView.swift */; };
 		300927AF2C3C6D990073E384 /* ToollBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927AE2C3C6D990073E384 /* ToollBar.swift */; };
 		300927B22C3C71200073E384 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927B12C3C71200073E384 /* ViewModel.swift */; };
+		300927B52C3C75210073E384 /* SoccerSquad.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 300927B32C3C75210073E384 /* SoccerSquad.xcdatamodeld */; };
+		300927B82C3C762C0073E384 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927B72C3C762C0073E384 /* Players.swift */; };
+		300927BA2C3C766C0073E384 /* UIImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927B92C3C766C0073E384 /* UIImageTransformer.swift */; };
+		300927BC2C3C77B40073E384 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927BB2C3C77B30073E384 /* CoreDataManager.swift */; };
+		300927BE2C3C79E10073E384 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927BD2C3C79E10073E384 /* TeamsView.swift */; };
+		300927C02C3C7A5C0073E384 /* lebalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927BF2C3C7A5C0073E384 /* lebalView.swift */; };
+		300927C22C3C7C990073E384 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927C12C3C7C990073E384 /* CustomTextFieldView.swift */; };
+		300927C52C3C802A0073E384 /* PlayerCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927C42C3C802A0073E384 /* PlayerCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +38,14 @@
 		300927AB2C3C69D60073E384 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		300927AE2C3C6D990073E384 /* ToollBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToollBar.swift; sourceTree = "<group>"; };
 		300927B12C3C71200073E384 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		300927B42C3C75210073E384 /* SoccerSquad.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoccerSquad.xcdatamodel; sourceTree = "<group>"; };
+		300927B72C3C762C0073E384 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		300927B92C3C766C0073E384 /* UIImageTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageTransformer.swift; sourceTree = "<group>"; };
+		300927BB2C3C77B30073E384 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		300927BD2C3C79E10073E384 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		300927BF2C3C7A5C0073E384 /* lebalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lebalView.swift; sourceTree = "<group>"; };
+		300927C12C3C7C990073E384 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		300927C42C3C802A0073E384 /* PlayerCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,8 @@
 		300927952C3C68DF0073E384 /* SoccerSquad */ = {
 			isa = PBXGroup;
 			children = (
+				300927C32C3C80170073E384 /* Cells */,
+				300927B62C3C76090073E384 /* CoreData */,
 				300927B02C3C71110073E384 /* ViewModel */,
 				300927AD2C3C6D760073E384 /* Helpers */,
 				300927AA2C3C69C40073E384 /* View */,
@@ -80,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				300927AB2C3C69D60073E384 /* MainView.swift */,
+				300927BD2C3C79E10073E384 /* TeamsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -87,7 +106,9 @@
 		300927AD2C3C6D760073E384 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				300927C12C3C7C990073E384 /* CustomTextFieldView.swift */,
 				300927AE2C3C6D990073E384 /* ToollBar.swift */,
+				300927BF2C3C7A5C0073E384 /* lebalView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -98,6 +119,25 @@
 				300927B12C3C71200073E384 /* ViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		300927B62C3C76090073E384 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				300927B32C3C75210073E384 /* SoccerSquad.xcdatamodeld */,
+				300927BB2C3C77B30073E384 /* CoreDataManager.swift */,
+				300927B72C3C762C0073E384 /* Players.swift */,
+				300927B92C3C766C0073E384 /* UIImageTransformer.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		300927C32C3C80170073E384 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				300927C42C3C802A0073E384 /* PlayerCellView.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +211,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300927C22C3C7C990073E384 /* CustomTextFieldView.swift in Sources */,
+				300927B82C3C762C0073E384 /* Players.swift in Sources */,
+				300927C02C3C7A5C0073E384 /* lebalView.swift in Sources */,
 				3009279B2C3C68DF0073E384 /* ViewController.swift in Sources */,
+				300927BA2C3C766C0073E384 /* UIImageTransformer.swift in Sources */,
+				300927C52C3C802A0073E384 /* PlayerCellView.swift in Sources */,
 				300927AC2C3C69D60073E384 /* MainView.swift in Sources */,
 				300927972C3C68DF0073E384 /* AppDelegate.swift in Sources */,
 				300927AF2C3C6D990073E384 /* ToollBar.swift in Sources */,
 				300927B22C3C71200073E384 /* ViewModel.swift in Sources */,
+				300927BE2C3C79E10073E384 /* TeamsView.swift in Sources */,
+				300927B52C3C75210073E384 /* SoccerSquad.xcdatamodeld in Sources */,
+				300927BC2C3C77B40073E384 /* CoreDataManager.swift in Sources */,
 				300927992C3C68DF0073E384 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +457,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		300927B32C3C75210073E384 /* SoccerSquad.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				300927B42C3C75210073E384 /* SoccerSquad.xcdatamodel */,
+			);
+			currentVersion = 300927B42C3C75210073E384 /* SoccerSquad.xcdatamodel */;
+			path = SoccerSquad.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3009278B2C3C68DF0073E384 /* Project object */;
 }

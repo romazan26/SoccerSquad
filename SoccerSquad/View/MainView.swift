@@ -13,10 +13,13 @@ struct MainView: View {
         ZStack {
             Color.black.ignoresSafeArea()
             VStack {
+                if vm.toolBarTag == 1 {
+                    TeamsView(vm: vm)
+                }
                 Spacer()
                 ToollBar(vm: vm)
             }
-        }
+        }.ignoresSafeArea()
     }
 }
 
