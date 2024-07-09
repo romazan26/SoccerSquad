@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct TeamsView: View {
-    @StateObject var vm: ViewModel
+    @StateObject var vm: TeamsViewModel
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea()
+            Color.main.ignoresSafeArea()
             VStack(spacing: 20) {
+                
+                //MARK: - Top tool bar
                 ZStack {
                     Color.grayApp
                     HStack{
@@ -32,16 +34,27 @@ struct TeamsView: View {
                         .font(.system(size: 18, weight: .heavy))
                     
                     //MARK: - List players
-                    ScrollView{
-                        PlayerCellView()
-                    }.padding(.top)
+                    ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
+                        ScrollView{
+                            PlayerCellView()
+                        }.padding(.top)
+                        
+                        //MARK: - Add player button
+                        Button(action: {vm.isPresentNewPlayerView.toggle()}, label: {
+                            PlusButtonView()
+                        })
+                        
+                    }
                 }.padding()
                 Spacer()
             }
         }
+        .sheet(isPresented: $vm.isPresentNewPlayerView, content: {
+            NewPlayerView(vm: vm)
+        })
     }
 }
 
 #Preview {
-    TeamsView(vm: ViewModel())
+    TeamsView(vm: TeamsViewModel())
 }

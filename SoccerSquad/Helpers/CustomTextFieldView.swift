@@ -18,18 +18,20 @@ struct CustomTextFieldView: View {
                     .resizable()
                     .frame(width: 16, height: 16)
                     .foregroundStyle(.gray)
-                if text.isEmpty {
-                    Text(placeholder)
-                        .padding(.horizontal, 5)
-                        .foregroundStyle(.white.opacity(0.4))
-                        .font(.system(size: 12))
-                }
-                else {
+                ZStack(alignment: Alignment(horizontal: .leading, vertical: .center)){
+                    if text.isEmpty {
+                        Text(placeholder)
+                            .padding(.horizontal, 5)
+                            .foregroundStyle(.white.opacity(0.4))
+                            .font(.system(size: 12))
+                    }
+                    
                     TextField("", text: $text)
                         .padding(.horizontal, 5)
                         .foregroundStyle(.white)
                         .font(.system(size: 12))
                 }
+                
             }.padding(.horizontal)
         }
         .cornerRadius(9)

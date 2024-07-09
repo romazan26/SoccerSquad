@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var vm = ViewModel()
+    @StateObject var vm = TeamsViewModel()
     var body: some View {
         ZStack {
-            Color.black.ignoresSafeArea()
+            Color.main.ignoresSafeArea()
             VStack {
                 if vm.toolBarTag == 1 {
                     TeamsView(vm: vm)

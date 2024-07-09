@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ToollBar: View {
-    @StateObject var vm: ViewModel
+    @StateObject var vm: TeamsViewModel
     var body: some View {
         ZStack {
             Color.grayApp
@@ -88,5 +88,5 @@ struct ToollBar: View {
 }
 
 #Preview {
-    ToollBar(vm: ViewModel())
+    ToollBar(vm: TeamsViewModel())
 }

@@ -7,15 +7,24 @@
 
 import Foundation
 import CoreData
+import UIKit
 
-final class ViewModel: ObservableObject {
+final class TeamsViewModel: ObservableObject {
     
     let manager = CoreDataManager.instance
     
     @Published var toolBarTag = 1
     @Published var searchText = ""
     
+    @Published var isPresentNewPlayerView = false
+    @Published var isPresentPicker = false
+    
     @Published var players: [Players] = []
+    
+    @Published var simplePlayerName = ""
+    @Published var simplePlayerAge = 0
+    @Published var simplePlayerNumber = ""
+    @Published var pickerResult: [UIImage] = []
     
     init(){
         getPlayers()
