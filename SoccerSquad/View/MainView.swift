@@ -9,17 +9,23 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var vm = TeamsViewModel()
+    @StateObject var vmMatach = MatchViewModel()
     var body: some View {
-        ZStack {
-            Color.main.ignoresSafeArea()
-            VStack {
-                if vm.toolBarTag == 1 {
-                    TeamsView(vm: vm)
+        NavigationView{
+            ZStack {
+                Color.main.ignoresSafeArea()
+                VStack {
+                    if vm.toolBarTag == 1 {
+                        TeamsView(vm: vm)
+                    }
+                    if vm.toolBarTag == 2 {
+                        MatchsView(vm: vmMatach)
+                    }
+                    Spacer()
+                    ToollBar(vm: vm)
                 }
-                Spacer()
-                ToollBar(vm: vm)
-            }
-        }.ignoresSafeArea()
+            }.ignoresSafeArea()
+        }
     }
 }
 

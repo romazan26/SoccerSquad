@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PlayerCellView: View {
+    let player: Players
     var body: some View {
         ZStack {
             Color.grayApp
@@ -15,17 +16,23 @@ struct PlayerCellView: View {
                 
                 //MARK: - Foto player
                 ZStack {
-                    Image(.fotoTest)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 71, height: 71)
-                        .cornerRadius(50)
-                    .padding(.trailing)
+                    if let imageData = player.foto{
+                        Image(uiImage: imageData)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 71, height: 71)
+                            .cornerRadius(50)
+                        .padding(.trailing)
+                    }else {
+                        NoPhotoView()
+                            .frame(width: 71, height: 71)
+                    }
+                    
                     ZStack{
                         Circle()
                             .foregroundStyle(.yellowApp)
                             .frame(width: 26)
-                       Text("7")
+                        Text("\(player.number)")
                             .foregroundStyle(.black)
                             .font(.system(size: 16, weight: .heavy))
                     }.offset(x: 20, y: -20)
@@ -34,10 +41,10 @@ struct PlayerCellView: View {
                 
                 //MARK: - Text
                 VStack(alignment: .leading) {
-                    Text("Cristiano Ronaldo")
+                    Text("\(player.name ?? "")")
                         .foregroundStyle(.white)
                     .font(.system(size: 16, weight: .heavy))
-                    Text("39 years old")
+                    Text("\(player.age) years old")
                         .foregroundStyle(.whiteGratApp)
                         .font(.system(size: 15, weight: .heavy))
                 }
@@ -62,6 +69,6 @@ struct PlayerCellView: View {
     }
 }
 
-#Preview {
-    PlayerCellView()
-}
+//#Preview {
+//    PlayerCellView(player: Players())
+//}

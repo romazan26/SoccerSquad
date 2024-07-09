@@ -29,6 +29,12 @@
 		300927CC2C3D24190073E384 /* PlusButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927CB2C3D24190073E384 /* PlusButtonView.swift */; };
 		300927CE2C3D313A0073E384 /* NoPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927CD2C3D313A0073E384 /* NoPhotoView.swift */; };
 		300927D02C3D35A10073E384 /* NumberPlayerCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927CF2C3D35A10073E384 /* NumberPlayerCircle.swift */; };
+		300927D22C3D64130073E384 /* NameTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927D12C3D64130073E384 /* NameTextFieldView.swift */; };
+		300927D42C3D679E0073E384 /* SavebuttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927D32C3D679E0073E384 /* SavebuttonView.swift */; };
+		300927D62C3D86D60073E384 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927D52C3D86D60073E384 /* PlayerView.swift */; };
+		300927D92C3DB2D00073E384 /* MatchsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927D82C3DB2D00073E384 /* MatchsView.swift */; };
+		300927DB2C3DB3680073E384 /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927DA2C3DB3680073E384 /* MatchViewModel.swift */; };
+		300927DD2C3DC6C90073E384 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927DC2C3DC6C90073E384 /* MathView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +62,12 @@
 		300927CB2C3D24190073E384 /* PlusButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonView.swift; sourceTree = "<group>"; };
 		300927CD2C3D313A0073E384 /* NoPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoPhotoView.swift; sourceTree = "<group>"; };
 		300927CF2C3D35A10073E384 /* NumberPlayerCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPlayerCircle.swift; sourceTree = "<group>"; };
+		300927D12C3D64130073E384 /* NameTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTextFieldView.swift; sourceTree = "<group>"; };
+		300927D32C3D679E0073E384 /* SavebuttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavebuttonView.swift; sourceTree = "<group>"; };
+		300927D52C3D86D60073E384 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		300927D82C3DB2D00073E384 /* MatchsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchsView.swift; sourceTree = "<group>"; };
+		300927DA2C3DB3680073E384 /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		300927DC2C3DC6C90073E384 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +119,7 @@
 		300927AA2C3C69C40073E384 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				300927D72C3DB29D0073E384 /* Matchs */,
 				300927C82C3D22DC0073E384 /* Teams */,
 				300927AB2C3C69D60073E384 /* MainView.swift */,
 			);
@@ -123,6 +136,8 @@
 				300927BF2C3C7A5C0073E384 /* lebalView.swift */,
 				300927CB2C3D24190073E384 /* PlusButtonView.swift */,
 				300927CF2C3D35A10073E384 /* NumberPlayerCircle.swift */,
+				300927D12C3D64130073E384 /* NameTextFieldView.swift */,
+				300927D32C3D679E0073E384 /* SavebuttonView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -131,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				300927B12C3C71200073E384 /* TeamsViewModel.swift */,
+				300927DA2C3DB3680073E384 /* MatchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -159,8 +175,18 @@
 			children = (
 				300927BD2C3C79E10073E384 /* TeamsView.swift */,
 				300927C92C3D22FF0073E384 /* NewPlayerView.swift */,
+				300927D52C3D86D60073E384 /* PlayerView.swift */,
 			);
 			path = Teams;
+			sourceTree = "<group>";
+		};
+		300927D72C3DB29D0073E384 /* Matchs */ = {
+			isa = PBXGroup;
+			children = (
+				300927D82C3DB2D00073E384 /* MatchsView.swift */,
+				300927DC2C3DC6C90073E384 /* MathView.swift */,
+			);
+			path = Matchs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				300927CA2C3D22FF0073E384 /* NewPlayerView.swift in Sources */,
+				300927D42C3D679E0073E384 /* SavebuttonView.swift in Sources */,
 				300927C22C3C7C990073E384 /* CustomTextFieldView.swift in Sources */,
+				300927D62C3D86D60073E384 /* PlayerView.swift in Sources */,
 				300927B82C3C762C0073E384 /* Players.swift in Sources */,
 				300927C02C3C7A5C0073E384 /* lebalView.swift in Sources */,
 				3009279B2C3C68DF0073E384 /* ViewController.swift in Sources */,
@@ -244,11 +272,15 @@
 				300927C52C3C802A0073E384 /* PlayerCellView.swift in Sources */,
 				300927AC2C3C69D60073E384 /* MainView.swift in Sources */,
 				300927972C3C68DF0073E384 /* AppDelegate.swift in Sources */,
+				300927D92C3DB2D00073E384 /* MatchsView.swift in Sources */,
 				300927C72C3D20680073E384 /* PhotoPicker.swift in Sources */,
 				300927AF2C3C6D990073E384 /* ToollBar.swift in Sources */,
+				300927DD2C3DC6C90073E384 /* MathView.swift in Sources */,
 				300927CE2C3D313A0073E384 /* NoPhotoView.swift in Sources */,
+				300927DB2C3DB3680073E384 /* MatchViewModel.swift in Sources */,
 				300927B22C3C71200073E384 /* TeamsViewModel.swift in Sources */,
 				300927BE2C3C79E10073E384 /* TeamsView.swift in Sources */,
+				300927D22C3D64130073E384 /* NameTextFieldView.swift in Sources */,
 				300927D02C3D35A10073E384 /* NumberPlayerCircle.swift in Sources */,
 				300927B52C3C75210073E384 /* SoccerSquad.xcdatamodeld in Sources */,
 				300927BC2C3C77B40073E384 /* CoreDataManager.swift in Sources */,
