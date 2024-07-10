@@ -29,7 +29,7 @@ struct MatchsView: View {
                     .padding(.top, 40)
                 }.frame(height: 123)
                 //MARK: - Count of Players
-                Text("Total players: (vm.matches.count)")
+                Text("Total players: \(vm.matchs.count)")
                     .foregroundStyle(.white)
                     .font(.system(size: 18, weight: .heavy))
                     .padding(.horizontal)
@@ -39,27 +39,28 @@ struct MatchsView: View {
                     //MARK: - List players
                     ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
                         ScrollView{
-//                            ForEach(vm.filterPlayers) { player in
-//                                NavigationLink {
-//                                    PlayerView(vm: vm, player: player)
-//                                } label: {
-//                                    PlayerCellView(player: player)
-//                                }
-//                            }
+                            ForEach(vm.matchs) { match in
+                                    MatchCellView(math: match)
+                            }
                             
                         }
                         
                         //MARK: - Add player button
-                       // Button(action: {vm.isPresentNewPlayerView.toggle()}, label: {
-                            PlusButtonView()
-                       // })
+                        HStack {
+                            Spacer()
+                            Button(action: {vm.isPresentNewMathView.toggle()}, label: {
+                                PlusButtonView()
+                            })
+                        }
                         
                     }
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.horizontal)
             }
-        }
+        }.sheet(isPresented: $vm.isPresentNewMathView, content: {
+            NewMatchView(vm: vm)
+        })
     }
 }
 

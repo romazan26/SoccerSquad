@@ -54,9 +54,12 @@ struct TeamsView: View {
                         }
                         
                         //MARK: - Add player button
-                        Button(action: {vm.isPresentNewPlayerView.toggle()}, label: {
-                            PlusButtonView()
-                        })
+                        HStack {
+                            Spacer()
+                            Button(action: {vm.isPresentNewPlayerView.toggle()}, label: {
+                                PlusButtonView()
+                            })
+                        }
                         
                     }
                 }

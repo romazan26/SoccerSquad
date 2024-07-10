@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Matchs" representedClassName="Matchs" syncable="YES" codeGenerationType="class">
+    <entity name="Matchs" representedClassName="Matchs" syncable="YES">
+        <attribute name="colorFirst" attributeType="Transformable" valueTransformerName="UIColorTransformer" customClassName="UIColor"/>
+        <attribute name="colorSecond" attributeType="Transformable" valueTransformerName="UIColorTransformer" customClassName="UIColor"/>
         <attribute name="scoreFirst" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="scoreSecond" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="titleFirst" optional="YES" attributeType="String"/>

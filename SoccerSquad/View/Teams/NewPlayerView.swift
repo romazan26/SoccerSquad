@@ -11,6 +11,7 @@ import PhotosUI
 struct NewPlayerView: View {
     @Environment(\.dismiss) var dismiss
     @StateObject var vm: TeamsViewModel
+    @FocusState private var keyboardIsFocused: Bool
     
     var config: PHPickerConfiguration {
         var config = PHPickerConfiguration(photoLibrary: .shared())
@@ -44,6 +45,7 @@ struct NewPlayerView: View {
                     })
                     //MARK: - Name player
                     NameTextFieldView(placeholder: "Name player", text: $vm.simplePlayerName)
+                        .focused($keyboardIsFocused)
                     Image(systemName: "pencil.line")
                         .resizable()
                         .frame(width: 20, height: 20)
@@ -74,6 +76,8 @@ struct NewPlayerView: View {
                         NumberPlayerCircle(text: $vm.simplePlayerNumber)
                         .frame(width: 55, height: 55)
                         .offset(x: 55, y: -50)
+                        .focused($keyboardIsFocused)
+                        .keyboardType(.numberPad)
                     }
                     //MARK: - Age player
                     HStack(spacing: 80){
@@ -106,6 +110,8 @@ struct NewPlayerView: View {
                 }, label: {SavebuttonView()})
             }
             .padding()
+        }.onTapGesture {
+            keyboardIsFocused = false
         }
     }
 }

@@ -35,6 +35,13 @@
 		300927D92C3DB2D00073E384 /* MatchsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927D82C3DB2D00073E384 /* MatchsView.swift */; };
 		300927DB2C3DB3680073E384 /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927DA2C3DB3680073E384 /* MatchViewModel.swift */; };
 		300927DD2C3DC6C90073E384 /* MathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927DC2C3DC6C90073E384 /* MathView.swift */; };
+		300927DF2C3E65D00073E384 /* UIColorTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927DE2C3E65D00073E384 /* UIColorTransformer.swift */; };
+		300927E12C3E66BB0073E384 /* Matchs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E02C3E66BB0073E384 /* Matchs.swift */; };
+		300927E32C3E78980073E384 /* MatchCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E22C3E78980073E384 /* MatchCellView.swift */; };
+		300927E52C3E7BF40073E384 /* TeamLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E42C3E7BF40073E384 /* TeamLabelView.swift */; };
+		300927E72C3E9C8D0073E384 /* NewMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E62C3E9C8D0073E384 /* NewMatchView.swift */; };
+		300927E92C3F20AA0073E384 /* GrayTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E82C3F20AA0073E384 /* GrayTextFieldView.swift */; };
+		300927EB2C3F232B0073E384 /* WinButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EA2C3F232B0073E384 /* WinButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +75,13 @@
 		300927D82C3DB2D00073E384 /* MatchsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchsView.swift; sourceTree = "<group>"; };
 		300927DA2C3DB3680073E384 /* MatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
 		300927DC2C3DC6C90073E384 /* MathView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathView.swift; sourceTree = "<group>"; };
+		300927DE2C3E65D00073E384 /* UIColorTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorTransformer.swift; sourceTree = "<group>"; };
+		300927E02C3E66BB0073E384 /* Matchs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matchs.swift; sourceTree = "<group>"; };
+		300927E22C3E78980073E384 /* MatchCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCellView.swift; sourceTree = "<group>"; };
+		300927E42C3E7BF40073E384 /* TeamLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamLabelView.swift; sourceTree = "<group>"; };
+		300927E62C3E9C8D0073E384 /* NewMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMatchView.swift; sourceTree = "<group>"; };
+		300927E82C3F20AA0073E384 /* GrayTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextFieldView.swift; sourceTree = "<group>"; };
+		300927EA2C3F232B0073E384 /* WinButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +152,9 @@
 				300927CF2C3D35A10073E384 /* NumberPlayerCircle.swift */,
 				300927D12C3D64130073E384 /* NameTextFieldView.swift */,
 				300927D32C3D679E0073E384 /* SavebuttonView.swift */,
+				300927E42C3E7BF40073E384 /* TeamLabelView.swift */,
+				300927E82C3F20AA0073E384 /* GrayTextFieldView.swift */,
+				300927EA2C3F232B0073E384 /* WinButtonView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -157,7 +174,9 @@
 				300927B32C3C75210073E384 /* SoccerSquad.xcdatamodeld */,
 				300927BB2C3C77B30073E384 /* CoreDataManager.swift */,
 				300927B72C3C762C0073E384 /* Players.swift */,
+				300927E02C3E66BB0073E384 /* Matchs.swift */,
 				300927B92C3C766C0073E384 /* UIImageTransformer.swift */,
+				300927DE2C3E65D00073E384 /* UIColorTransformer.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -166,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				300927C42C3C802A0073E384 /* PlayerCellView.swift */,
+				300927E22C3E78980073E384 /* MatchCellView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -185,6 +205,7 @@
 			children = (
 				300927D82C3DB2D00073E384 /* MatchsView.swift */,
 				300927DC2C3DC6C90073E384 /* MathView.swift */,
+				300927E62C3E9C8D0073E384 /* NewMatchView.swift */,
 			);
 			path = Matchs;
 			sourceTree = "<group>";
@@ -267,8 +288,11 @@
 				300927B82C3C762C0073E384 /* Players.swift in Sources */,
 				300927C02C3C7A5C0073E384 /* lebalView.swift in Sources */,
 				3009279B2C3C68DF0073E384 /* ViewController.swift in Sources */,
+				300927E72C3E9C8D0073E384 /* NewMatchView.swift in Sources */,
 				300927BA2C3C766C0073E384 /* UIImageTransformer.swift in Sources */,
 				300927CC2C3D24190073E384 /* PlusButtonView.swift in Sources */,
+				300927E52C3E7BF40073E384 /* TeamLabelView.swift in Sources */,
+				300927DF2C3E65D00073E384 /* UIColorTransformer.swift in Sources */,
 				300927C52C3C802A0073E384 /* PlayerCellView.swift in Sources */,
 				300927AC2C3C69D60073E384 /* MainView.swift in Sources */,
 				300927972C3C68DF0073E384 /* AppDelegate.swift in Sources */,
@@ -276,12 +300,16 @@
 				300927C72C3D20680073E384 /* PhotoPicker.swift in Sources */,
 				300927AF2C3C6D990073E384 /* ToollBar.swift in Sources */,
 				300927DD2C3DC6C90073E384 /* MathView.swift in Sources */,
+				300927EB2C3F232B0073E384 /* WinButtonView.swift in Sources */,
+				300927E12C3E66BB0073E384 /* Matchs.swift in Sources */,
 				300927CE2C3D313A0073E384 /* NoPhotoView.swift in Sources */,
 				300927DB2C3DB3680073E384 /* MatchViewModel.swift in Sources */,
 				300927B22C3C71200073E384 /* TeamsViewModel.swift in Sources */,
 				300927BE2C3C79E10073E384 /* TeamsView.swift in Sources */,
+				300927E32C3E78980073E384 /* MatchCellView.swift in Sources */,
 				300927D22C3D64130073E384 /* NameTextFieldView.swift in Sources */,
 				300927D02C3D35A10073E384 /* NumberPlayerCircle.swift in Sources */,
+				300927E92C3F20AA0073E384 /* GrayTextFieldView.swift in Sources */,
 				300927B52C3C75210073E384 /* SoccerSquad.xcdatamodeld in Sources */,
 				300927BC2C3C77B40073E384 /* CoreDataManager.swift in Sources */,
 				300927992C3C68DF0073E384 /* SceneDelegate.swift in Sources */,
