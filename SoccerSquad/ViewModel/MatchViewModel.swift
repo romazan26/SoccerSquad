@@ -16,9 +16,9 @@ final class MatchViewModel: ObservableObject{
     
     @Published var searchText = ""
     
-    @Published var colorSelect = Color.white
-    
     @Published var isPresentNewMathView = false
+    @Published var isPresentColorPicker = false
+    @Published var isPresentColorPicker2 = false
     
     @Published var simpleFirstTitle = ""
     @Published var simpleSecondTitle = ""
@@ -60,6 +60,8 @@ final class MatchViewModel: ObservableObject{
         newMatch.titleFirst = simpleFirstTitle
         newMatch.titleSecond = simpleSecondTitle
         newMatch.winFirst = simpleFirstWin
+        newMatch.colorFirst = UIColor(simpleFirstColor)
+        newMatch.colorSecond = UIColor(simpleSecondColor)
         
         save()
         clear()

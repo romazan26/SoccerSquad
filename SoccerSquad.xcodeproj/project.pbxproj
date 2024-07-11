@@ -42,6 +42,8 @@
 		300927E72C3E9C8D0073E384 /* NewMatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E62C3E9C8D0073E384 /* NewMatchView.swift */; };
 		300927E92C3F20AA0073E384 /* GrayTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927E82C3F20AA0073E384 /* GrayTextFieldView.swift */; };
 		300927EB2C3F232B0073E384 /* WinButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EA2C3F232B0073E384 /* WinButtonView.swift */; };
+		300927ED2C3FB6030073E384 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EC2C3FB6030073E384 /* ColorPickerView.swift */; };
+		300927EF2C3FBB710073E384 /* BlurUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EE2C3FBB710073E384 /* BlurUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		300927E62C3E9C8D0073E384 /* NewMatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMatchView.swift; sourceTree = "<group>"; };
 		300927E82C3F20AA0073E384 /* GrayTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayTextFieldView.swift; sourceTree = "<group>"; };
 		300927EA2C3F232B0073E384 /* WinButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinButtonView.swift; sourceTree = "<group>"; };
+		300927EC2C3FB6030073E384 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		300927EE2C3FBB710073E384 /* BlurUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,7 @@
 		300927AD2C3C6D760073E384 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				300927EE2C3FBB710073E384 /* BlurUIView.swift */,
 				300927CD2C3D313A0073E384 /* NoPhotoView.swift */,
 				300927C62C3D20680073E384 /* PhotoPicker.swift */,
 				300927C12C3C7C990073E384 /* CustomTextFieldView.swift */,
@@ -206,6 +211,7 @@
 				300927D82C3DB2D00073E384 /* MatchsView.swift */,
 				300927DC2C3DC6C90073E384 /* MathView.swift */,
 				300927E62C3E9C8D0073E384 /* NewMatchView.swift */,
+				300927EC2C3FB6030073E384 /* ColorPickerView.swift */,
 			);
 			path = Matchs;
 			sourceTree = "<group>";
@@ -304,12 +310,14 @@
 				300927E12C3E66BB0073E384 /* Matchs.swift in Sources */,
 				300927CE2C3D313A0073E384 /* NoPhotoView.swift in Sources */,
 				300927DB2C3DB3680073E384 /* MatchViewModel.swift in Sources */,
+				300927EF2C3FBB710073E384 /* BlurUIView.swift in Sources */,
 				300927B22C3C71200073E384 /* TeamsViewModel.swift in Sources */,
 				300927BE2C3C79E10073E384 /* TeamsView.swift in Sources */,
 				300927E32C3E78980073E384 /* MatchCellView.swift in Sources */,
 				300927D22C3D64130073E384 /* NameTextFieldView.swift in Sources */,
 				300927D02C3D35A10073E384 /* NumberPlayerCircle.swift in Sources */,
 				300927E92C3F20AA0073E384 /* GrayTextFieldView.swift in Sources */,
+				300927ED2C3FB6030073E384 /* ColorPickerView.swift in Sources */,
 				300927B52C3C75210073E384 /* SoccerSquad.xcdatamodeld in Sources */,
 				300927BC2C3C77B40073E384 /* CoreDataManager.swift in Sources */,
 				300927992C3C68DF0073E384 /* SceneDelegate.swift in Sources */,

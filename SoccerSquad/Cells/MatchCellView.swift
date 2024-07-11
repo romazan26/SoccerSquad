@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct MatchCellView: View {
-    let math: Matchs
+    let match: Matchs
     var body: some View {
         ZStack {
             Color.grayApp
             HStack {
                 
                 //MARK: - FirstTeam
-                TeamLabelView(nameTeam: math.titleFirst ?? "", colorTeam: .green, isWin: math.winFirst)
+                TeamLabelView(nameTeam: match.titleFirst ?? "", colorTeam: Color(uiColor: match.colorFirst ?? .gray), isWin: match.winFirst)
                 Spacer()
                 //MARK: - Score match
                 VStack {
-                    Text("\(math.scoreFirst):\(math.scoreSecond)")
+                    Text("\(match.scoreFirst):\(match.scoreSecond)")
                         .foregroundStyle(.white)
                         .font(.system(size: 32,weight: .heavy))
-                    Text("\(math.titleFirst ?? "") - \(math.titleSecond ?? "")")
+                    Text("\(match.titleFirst ?? "") - \(match.titleSecond ?? "")")
                         .foregroundStyle(.whiteGratApp)
                         .font(.system(size: 16))
                 }
@@ -30,7 +30,7 @@ struct MatchCellView: View {
                 Spacer()
                 
                 //MARK: - SecondTeam
-                TeamLabelView(nameTeam: math.titleSecond ?? "", colorTeam: .red, isWin: !math.winFirst)
+                TeamLabelView(nameTeam: match.titleSecond ?? "", colorTeam: Color(uiColor: match.colorSecond ?? .gray), isWin: !match.winFirst)
                 
             }.padding()
         }

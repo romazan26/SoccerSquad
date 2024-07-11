@@ -40,7 +40,7 @@ struct MatchsView: View {
                     ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
                         ScrollView{
                             ForEach(vm.matchs) { match in
-                                    MatchCellView(math: match)
+                                    MatchCellView(match: match)
                             }
                             
                         }

@@ -48,7 +48,7 @@ struct TeamsView: View {
                                     PlayerView(vm: vm, player: player)
                                 } label: {
                                     PlayerCellView(player: player)
-                                }    
+                                }.padding(.vertical, 5)
                             }
                             
                         }
