@@ -25,6 +25,7 @@ final class TeamsViewModel: ObservableObject {
     @Published var simplePlayerName = ""
     @Published var simplePlayerAge = 0
     @Published var simplePlayerNumber = ""
+    @Published var simplePlayerThing = Things.shirt
     @Published var pickerResult: [UIImage] = []
     
     init(){

@@ -21,6 +21,9 @@ struct MainView: View {
                     if vm.toolBarTag == 2 {
                         MatchsView(vm: vmMatach)
                     }
+                    if vm.toolBarTag == 3 {
+                        InventoryView()
+                    }
                     Spacer()
                     ToollBar(vm: vm)
                 }

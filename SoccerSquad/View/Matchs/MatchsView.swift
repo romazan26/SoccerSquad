@@ -22,7 +22,7 @@ struct MatchsView: View {
                             .padding(.trailing)
                         CustomTextFieldView(placeholder: "Search match", text: $vm.searchText)
                             .onSubmit() {
-                                //vm.filter()
+                                vm.filterMaths()
                             }
                     }
                     .padding(.horizontal)
@@ -39,7 +39,7 @@ struct MatchsView: View {
                     //MARK: - List players
                     ZStack(alignment: Alignment(horizontal: .trailing, vertical: .bottom)) {
                         ScrollView{
-                            ForEach(vm.matchs) { match in
+                            ForEach(vm.filtersMathcs) { match in
                                     MatchCellView(match: match)
                             }
                             

@@ -13,6 +13,7 @@ final class MatchViewModel: ObservableObject{
     let manager = CoreDataManager.instance
     
     @Published var matchs: [Matchs] = []
+    @Published var filtersMathcs: [Matchs] = []
     
     @Published var searchText = ""
     
@@ -30,6 +31,14 @@ final class MatchViewModel: ObservableObject{
     
     init(){
         getMatchs()
+        filterMaths()
+    }
+    
+    //MARK: - get filter matchs
+    func filterMaths(){
+        if !searchText.isEmpty {
+            filtersMathcs = matchs.filter { $0.titleFirst!.localizedCaseInsensitiveContains(searchText) }
+        }else {filtersMathcs = matchs}
     }
     
     //MARK: - get winner

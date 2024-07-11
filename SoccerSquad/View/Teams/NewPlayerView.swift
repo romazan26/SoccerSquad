@@ -99,6 +99,23 @@ struct NewPlayerView: View {
                         })
                     }
                     .padding(.top, 30)
+                    
+                    //MARK: - things
+                    HStack{
+                        ForEach(Things.allCases) { thing in
+                            Button(action: {vm.simplePlayerThing = thing}, label: {
+                                Image(thing.image)
+                                    .resizable()
+                                    .frame(width: 63, height: 63)
+                                    .brightness(0.5)
+                                    .colorMultiply(vm.simplePlayerThing == thing ? .yellowApp : .whiteGratApp)
+                                    
+                                    .padding()
+                                    .padding(.top, 20)
+                            })
+                            
+                        }
+                    }
                 }.padding(.top, 40)
                 
                 Spacer()

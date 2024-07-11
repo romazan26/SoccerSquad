@@ -44,6 +44,8 @@
 		300927EB2C3F232B0073E384 /* WinButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EA2C3F232B0073E384 /* WinButtonView.swift */; };
 		300927ED2C3FB6030073E384 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EC2C3FB6030073E384 /* ColorPickerView.swift */; };
 		300927EF2C3FBB710073E384 /* BlurUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300927EE2C3FBB710073E384 /* BlurUIView.swift */; };
+		30C0CC662C4064DB00D194B0 /* Unums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CC652C4064DB00D194B0 /* Unums.swift */; };
+		30C0CC692C406F6A00D194B0 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C0CC682C406F6A00D194B0 /* InventoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		300927EA2C3F232B0073E384 /* WinButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinButtonView.swift; sourceTree = "<group>"; };
 		300927EC2C3FB6030073E384 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		300927EE2C3FBB710073E384 /* BlurUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurUIView.swift; sourceTree = "<group>"; };
+		30C0CC652C4064DB00D194B0 /* Unums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unums.swift; sourceTree = "<group>"; };
+		30C0CC682C406F6A00D194B0 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 		300927AA2C3C69C40073E384 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				30C0CC672C406F3E00D194B0 /* Inventory */,
 				300927D72C3DB29D0073E384 /* Matchs */,
 				300927C82C3D22DC0073E384 /* Teams */,
 				300927AB2C3C69D60073E384 /* MainView.swift */,
@@ -169,6 +174,7 @@
 			children = (
 				300927B12C3C71200073E384 /* TeamsViewModel.swift */,
 				300927DA2C3DB3680073E384 /* MatchViewModel.swift */,
+				30C0CC652C4064DB00D194B0 /* Unums.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -214,6 +220,14 @@
 				300927EC2C3FB6030073E384 /* ColorPickerView.swift */,
 			);
 			path = Matchs;
+			sourceTree = "<group>";
+		};
+		30C0CC672C406F3E00D194B0 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				30C0CC682C406F6A00D194B0 /* InventoryView.swift */,
+			);
+			path = Inventory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +304,7 @@
 				300927CA2C3D22FF0073E384 /* NewPlayerView.swift in Sources */,
 				300927D42C3D679E0073E384 /* SavebuttonView.swift in Sources */,
 				300927C22C3C7C990073E384 /* CustomTextFieldView.swift in Sources */,
+				30C0CC692C406F6A00D194B0 /* InventoryView.swift in Sources */,
 				300927D62C3D86D60073E384 /* PlayerView.swift in Sources */,
 				300927B82C3C762C0073E384 /* Players.swift in Sources */,
 				300927C02C3C7A5C0073E384 /* lebalView.swift in Sources */,
@@ -314,6 +329,7 @@
 				300927B22C3C71200073E384 /* TeamsViewModel.swift in Sources */,
 				300927BE2C3C79E10073E384 /* TeamsView.swift in Sources */,
 				300927E32C3E78980073E384 /* MatchCellView.swift in Sources */,
+				30C0CC662C4064DB00D194B0 /* Unums.swift in Sources */,
 				300927D22C3D64130073E384 /* NameTextFieldView.swift in Sources */,
 				300927D02C3D35A10073E384 /* NumberPlayerCircle.swift in Sources */,
 				300927E92C3F20AA0073E384 /* GrayTextFieldView.swift in Sources */,
